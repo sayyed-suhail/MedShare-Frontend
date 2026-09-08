@@ -98,9 +98,13 @@ export default function LoginPage() {
             Don't have an account? 
             <Link className="link link--strong" to="/RegisterPage">Sign Up</Link>
 
+
           </div>
         </div>
       </div>
+      
+      
+      
     </div>
   );
 }
