@@ -1,4 +1,4 @@
-import './stateCard.css';
+import "./StatCard.css";
 
 /**
  * Reusable small stat box.
@@ -9,7 +9,13 @@ import './stateCard.css';
  *  - unit: small text next to value (optional)
  *  - variant: "default" | "warm"  (controls icon circle + number color)
  */
-export default function StatCard({ icon, label, value, unit, variant = 'default' }) {
+export default function StatCard({
+  icon,
+  label,
+  value,
+  unit,
+  variant = "default",
+}) {
   return (
     <div className={`stat-card stat-card--${variant}`}>
       <div className="stat-card-decoration"></div>

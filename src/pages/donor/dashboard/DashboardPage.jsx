@@ -1,9 +1,9 @@
 import './DashboardPage.css';
 
 
-import StatCard from '../../../components/stateCard';
-import InsightCard from '../../../components/InsightCard';
-import DonationTable from '../../../components/DonationTable';
+import StatCard from '../../../components/dashboard/StatCard';
+import InsightCard from '../../../components/dashboard/InsightCard';
+import DonationTable from '../../../components/dashboard/DonationTable';
 
 // ---- MOCK DATA ----
 // This stands in for what will later come from your backend API.

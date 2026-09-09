@@ -1,9 +1,9 @@
-import './DonationTable.css';
+import "./DonationTable.css";
 
 const statusStyles = {
-  'Picked Up': 'status-badge--picked-up',
-  Approved: 'status-badge--approved',
-  Pending: 'status-badge--pending',
+  "Picked Up": "status-badge--picked-up",
+  Approved: "status-badge--approved",
+  Pending: "status-badge--pending",
 };
 
 /**
@@ -21,7 +21,8 @@ export default function DonationsTable({ donations, onViewAll }) {
           Recent Donations
         </h3>
         <button className="view-all-btn" type="button" onClick={onViewAll}>
-          View All <span className="material-symbols-outlined">chevron_right</span>
+          View All{" "}
+          <span className="material-symbols-outlined">chevron_right</span>
         </button>
       </div>
 
@@ -41,18 +42,24 @@ export default function DonationsTable({ donations, onViewAll }) {
                 <td>
                   <div className="medicine-cell">
                     <div className="medicine-icon">
-                      <span className="material-symbols-outlined">{item.icon}</span>
+                      <span className="material-symbols-outlined">
+                        {item.icon}
+                      </span>
                     </div>
                     <div>
                       <p className="medicine-name">{item.name}</p>
-                      <p className="medicine-category-mobile">{item.category}</p>
+                      <p className="medicine-category-mobile">
+                        {item.category}
+                      </p>
                     </div>
                   </div>
                 </td>
                 <td className="hide-on-mobile">{item.category}</td>
                 <td>{item.date}</td>
                 <td className="align-right">
-                  <span className={`status-badge ${statusStyles[item.status] || ''}`}>
+                  <span
+                    className={`status-badge ${statusStyles[item.status] || ""}`}
+                  >
                     {item.status}
                   </span>
                 </td>
