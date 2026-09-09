@@ -13,11 +13,11 @@ const Header = () => {
           <button aria-label="Notifications" className="icon-btn">
             <span className="material-symbols-outlined">notifications</span>
           </button>
-        
+
           <ul>
-              <Link to="/login" className="login-link">
+            <Link to="/login" className="login-link">
               <span className="material-symbols-outlined">person</span>
-               </Link>
+            </Link>
           </ul>
         </div>
       </header>

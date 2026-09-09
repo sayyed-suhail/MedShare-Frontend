@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 import "./Footer.css";
 
 function Footer() {
   return (
     <div>
-        <footer className="footer">
+      <footer className="footer">
         <div className="container">
           <div className="trust-section">
             <p className="label-md trust-label">
@@ -43,9 +43,8 @@ function Footer() {
           </div>
         </div>
       </footer>
-      
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
